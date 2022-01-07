@@ -1,8 +1,8 @@
 #packages
-	library(dplyr)
+ library(dplyr)
 
 #load dataset
-	data(iris)
+ data(iris)
 
 #basic analysis
  summary(iris)
