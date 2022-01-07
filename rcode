@@ -1,0 +1,10 @@
+#packages
+	library(dplyr)
+
+#load dataset
+	data(iris)
+
+#basic analysis
+ summary(iris)
+ str(iris)
+ 
