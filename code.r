@@ -152,3 +152,6 @@ par(mfrow = c(1,3))
 hist(WPS$Petal.Width, main = "Petal Width: \n Setosa", xlab = "Width (cm)")
 hist(WPV$Petal.Width, main = "Petal Width: \n Versicolor", xlab = "Width (cm)")
 hist(WPVI$Petal.Width, main = "Petal Width: \n Virginica", xlab = "Width (cm)")
+
+
+##################### :dizzy: Correlation analysis :dizzy:#####################
