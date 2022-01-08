@@ -3,5 +3,5 @@ Originally published at UCI Machine Learning Repository: Iris Data Set, this dat
 Each row of the table represents an iris flower, including its species and dimensions of its botanical parts, sepal and petal, in centimeters.
 
 # Purpose
-This is a simple analysis I did for a university course (with correlation analysis)
+This is a simple analysis I did for a university course (with correlation analysis).
 
