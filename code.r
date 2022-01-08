@@ -154,4 +154,22 @@ hist(WPV$Petal.Width, main = "Petal Width: \n Versicolor", xlab = "Width (cm)")
 hist(WPVI$Petal.Width, main = "Petal Width: \n Virginica", xlab = "Width (cm)")
 
 
-##################### :dizzy: Correlation analysis :dizzy:#####################
+################### # # Correlation analysis # # ###################
+#package
+library(corrplot)
+
+#setosa 
+iris_Setosa <- data.frame(SS$Sepal.Length, PS$Petal.Length, WS$Sepal.Width, WPS$Petal.Width)
+SetosaCor <- cor(iris_Setosa)
+par(mfrow = c(1,1))
+corrplot(SetosaCor, method = "ellipse")
+
+#versicolor
+iris_Versi<- data.frame(SV$Sepal.Length, PV$Petal.Length, WV$Sepal.Width, WPV$Petal.Width)
+VersiCor <- cor(iris_Versi)
+corrplot(VersiCor, method = "ellipse")
+
+#virginica
+iris_Virgi<- data.frame(SVI$Sepal.Length, PVI$Petal.Length, WVI$Sepal.Width, WPVI$Petal.Width)
+VirgiCor <- cor(iris_Virgi)
+corrplot(VirgiCor, method = "ellipse")
