@@ -15,13 +15,13 @@ head(iris)
 ##################### Sepal length analysis #####################
 ##setosa
 SS <-subset(iris, subset=Sepal.Length & Species == "setosa") %>%
-     select(-Sepal.Width, -Petal.Length, -Petal.Width)
+  select(-Sepal.Width, -Petal.Length, -Petal.Width)
 ##versicolor
 SV <-subset(iris, subset=Sepal.Length & Species == "versicolor") %>%
-     select(-Sepal.Width, -Petal.Length, -Petal.Width)
+  select(-Sepal.Width, -Petal.Length, -Petal.Width)
 ##virginica
 SVI <-subset(iris, subset=Sepal.Length & Species == "virginica") %>%
-      select(-Sepal.Width, -Petal.Length, -Petal.Width)
+  select(-Sepal.Width, -Petal.Length, -Petal.Width)
 #boxplot
 boxplot(SS$Sepal.Length, 
         SV$Sepal.Length, 
@@ -51,13 +51,13 @@ hist(SVI$Sepal.Length, main = "Sepal Length: \n Virginica", xlab = "Length (cm)"
 par(mfrow = c(1,1))
 ##setosa
 PS <-subset(iris, subset=Petal.Length & Species == "setosa") %>%
-     select(-Sepal.Width, -Sepal.Length, -Petal.Width)
+  select(-Sepal.Width, -Sepal.Length, -Petal.Width)
 ##versicolor
 PV <-subset(iris, subset=Petal.Length & Species == "versicolor") %>%
-     select(-Sepal.Width, -Sepal.Length, -Petal.Width)
+  select(-Sepal.Width, -Sepal.Length, -Petal.Width)
 ##virginica
 PVI <-subset(iris, subset=Petal.Length & Species == "virginica") %>%
-      select(-Sepal.Width, -Sepal.Length, -Petal.Width)
+  select(-Sepal.Width, -Sepal.Length, -Petal.Width)
 #boxplot
 par(mfrow = c(1,1)) #fix previous code
 boxplot(PS$Petal.Length, 
@@ -86,13 +86,13 @@ hist(PVI$Petal.Length, main = "Petal Length: \n Virginica", xlab = "Length (cm)"
 ##################### Sepal width analysis #####################
 ##setosa
 WS <-subset(iris, subset=Sepal.Width & Species == "setosa") %>%
-     select(-Sepal.Length, -Petal.Length, -Petal.Width)
+  select(-Sepal.Length, -Petal.Length, -Petal.Width)
 ##versicolor
 WV <-subset(iris, subset=Sepal.Width  & Species == "versicolor") %>%
-     select(-Sepal.Length, -Petal.Length, -Petal.Width)
+  select(-Sepal.Length, -Petal.Length, -Petal.Width)
 ##virginica
 WVI <-subset(iris, subset=Sepal.Width & Species == "virginica") %>%
-      select(-Sepal.Length, -Petal.Length, -Petal.Width)
+  select(-Sepal.Length, -Petal.Length, -Petal.Width)
 #boxplot
 par(mfrow = c(1,1)) #fix previous code
 boxplot(WS$Sepal.Width, 
@@ -121,13 +121,13 @@ hist(WVI$Sepal.Width, main = "Sepal Width: \n Virginica", xlab = "Width (cm)")
 ##################### Petal width analysis #####################
 ##setosa
 WPS <-subset(iris, subset=Petal.Width & Species == "setosa") %>%
-     select(-Sepal.Length, -Petal.Length, -Sepal.Width)
+  select(-Sepal.Length, -Petal.Length, -Sepal.Width)
 ##versicolor
 WPV <-subset(iris, subset=Petal.Width  & Species == "versicolor") %>%
-     select(-Sepal.Length, -Petal.Length, -Sepal.Width)
+  select(-Sepal.Length, -Petal.Length, -Sepal.Width)
 ##virginica
 WPVI <-subset(iris, subset=Petal.Width & Species == "virginica") %>%
-      select(-Sepal.Length, -Petal.Length, -Sepal.Width)
+  select(-Sepal.Length, -Petal.Length, -Sepal.Width)
 #boxplot
 par(mfrow = c(1,1)) #fix previous code
 boxplot(WPS$Petal.Width, 
